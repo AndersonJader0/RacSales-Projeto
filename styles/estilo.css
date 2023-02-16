@@ -219,7 +219,7 @@ strong{
     padding-left: 1em;
 }
 
-.formulário input:not(button):focus-within{
+.formulário input{
     padding-left: 1em;
 }
 
