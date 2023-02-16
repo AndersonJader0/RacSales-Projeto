@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: "Righteous", sans-serif;
+}
+
+h2{
+    font-family: "Nunito", sans-serif;
+}
+
+p{
+    font-family: "Lato";
+}
+
+.sobrenosnav{
+    text-decoration: underline;
+}
+
+.cabeçalho{
+    text-align: center;
+}
+
+.cabeçalho h1{
+    background-color: #242427;
+    color: #fcdf2a;
+    padding: 15px;
+}
+
+.cabeçalho-menu{
+    background-color: #ffdf2b;
+    font-family: "Lato";
+    padding: .5em;
+}
+
+.cabeçalho-menu li{
+    padding: 1em;
+    font-size: 1.2em;
+    list-style: none;
+}
+
+.cabeçalho-menu li:hover{
+    background: #fce445;
+    cursor: pointer;
+}
+
+.cabeçalho-menu a{
+    text-decoration: none;
+    color: #242427;
+
+}
+
+.main-faixa-empresa{
+    font-family: "Righteous";
+    background-color: #242427;
+    padding: 15px;
+    color: #fce445;
+}
+
+.main-faixa-empresa h2{
+    display: inline-block;
+    text-align: center;
+}
+
+.main-faixa-empresa span{
+    font-size: 2em;
+    color: rgb(255, 223, 11);
+}
+
+section{
+    text-align: center;
+    padding: 1.5em;
+    background-color: #d9d9d9;
+}
+
+section p{
+    text-align: justify;
+    font-size: 1.1em;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    line-height: 1.5em;
+}
+
+section span{
+    font-size: 4em;
+    display: block;
+}
+
+#contato h2{
+    padding-bottom: 1em;
+    border-bottom: 1px solid #242427;
+}
+
+#contato p{
+    margin-top: 1em;
+    background: #fdfdfd;
+}
+
+#contato{
+    text-align: center;
+    padding: 4em;
+    background-color: #d9d9d9;
+}
+
+#contato div{
+    background: linear-gradient(90deg, #fbffa8, #ffeb6c, #fce445);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#contato div span{
+    transition: all .5s;
+    font-size: 3em;
+}
+
+#contato div span:hover{
+    scale: 1.1;
+    transition: all .5s;
+}
+
+strong{
+    color:#ffdd00;
+}
+
+.third-section-h2{
+    background-color: #242427;
+    color:#eeeeee;
+    padding: 10px;
+    border-top-right-radius: 1em;
+    margin-bottom: 1em;
+}
+
+.third-section div img{
+    max-width: 100%;
+    transition: all .5s;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    background-size: cover;
+    background-position: center;
+    height: 77%;
+}
+
+.third-section div img:hover{
+    scale: 1.05;
+    transition: all .5s;
+    
+}
+
+.third-section div p{
+    background-color: black;
+    color: white;
+    margin-bottom: .5em;
+    text-align: center;
+    padding: 1em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+
+
+footer{
+    padding: 2em;
+    background-color:black;
+    color: #f5f5f5;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+@media screen and (min-width: 47em){
+    .cabeçalho h1{
+        font-size: 1.5em;
+        line-height: 1.5em;
+        float: left;
+        width: 19%;
+        height: 10vh;
+    }
+
+    .cabeçalho-menu{
+        float: right;
+        width: 81%;
+        height: 10vh;
+        text-align: right;
+    }
+    .cabeçalho-menu li{
+        padding: .8em;
+        display: inline-block;
+    }
+
+    .main-faixa-empresa{
+        clear: both;
+        background: linear-gradient(rgba(0,0,0, .3), rgba(0,0,0, .9)), url(../images/mercedesbackground.jpg);
+        height: 90vh;
+        background-size: cover;
+        background-position: center;
+        padding: 3em;
+    }
+
+    .main-faixa-empresa span{
+        color: transparent;
+        margin-top: 20%;
+    }
+
+    .main-faixa-empresa h2{
+        font-size: 2em;
+        text-transform: uppercase;
+        background-color: rgba(0,0,0, .4);
+        padding: 10px;
+    }
+
+    .artigos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .artigos article{
+        width: 46%;
+        margin: 2%;
+    }
+
+    .third-section h2{
+        display: block;
+        width: 100%;
+    }
+    
+    .third-section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .third-section div{
+        width: 48%;
+        margin: 1%;
+    }
+
+    .img4{
+        width: 30em;
+    }
+    
+    .artigos{
+        padding-bottom: 0;
+    }
+        
+}
+
+@media screen and (min-width: 62.5em){
+
+    .main-faixa-empresa h2{
+        margin-top: -2em;
+    }
+
+}
+
+@media screen and (min-width: 64em){
+
+    .artigos article{
+        width: 23%;
+        margin: 1%;
+    }
+
+    .third-section div{
+        width: 23%;
+        margin: 1%;
+    }
+
+    .artigos-geral{
+        padding-top: 1em;
+    }
+
+    .main-faixa-empresa h2{
+            width: 28em;
+    }
+
+}
