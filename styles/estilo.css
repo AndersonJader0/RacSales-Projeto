@@ -190,10 +190,7 @@ strong{
 
 .formulário{
     padding-top: 13%;
-    background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .9)), url(../images/lendojornal.jpg);
-    height: 70vh;
-    background-size: cover;
-    background-position: center;
+    background-color:#242427;
     color: white;
     text-align: justify;
 }
@@ -231,8 +228,6 @@ strong{
 }
 
 
-
-
 footer{
     padding: 2em;
     background-color:black;
@@ -244,7 +239,7 @@ footer{
 
 footer p{
     font-family: "Righteous";
-    color:white;
+    color:whitec;
 }
 
 @media screen and (min-width: 47em){
@@ -323,7 +318,12 @@ footer p{
     }
 
     .formulário{
-        padding: 10% 20%;
+        background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .9)), url(../images/lendojornal.jpg);
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        padding: 7% 20% 10%;
+        height: 70vh;
     }
         
 }
@@ -332,6 +332,13 @@ footer p{
 
     .main-faixa-empresa h2{
         margin-top: -2em;
+    }
+
+    .formulário{
+    background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .9)), url(../images/lendojornal.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
     }
 
 }
@@ -357,7 +364,21 @@ footer p{
     }
 
     .formulário{
-        padding: 7% 30%;
+        background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .9)), url(../images/lendojornal.jpg);
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        padding: 7% 10% 10% 50%;
     }
-
 }
+
+@media screen and (width: 1440px){
+    .formulário{
+        background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .9)), url(../images/lendojornal.jpg);
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        padding: 10em 10em 10em 50em;
+    }
+}
+
