@@ -41,7 +41,7 @@ p{
 }
 
 .cabeçalho-menu li{
-    padding: 1em;
+    padding: 15px;
     font-size: 1.2em;
     list-style: none;
 }
@@ -190,11 +190,11 @@ footer{
     .cabeçalho-menu{
         float: right;
         width: 81%;
-        height: 10vh;
+        height: 10px;
         text-align: right;
     }
     .cabeçalho-menu li{
-        padding: .8em;
+        padding: 12px;
         display: inline-block;
     }
 
