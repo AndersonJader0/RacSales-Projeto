@@ -190,11 +190,11 @@ footer{
     .cabeçalho-menu{
         float: right;
         width: 81%;
-        height: 10px;
+        height: 10vh;
         text-align: right;
     }
     .cabeçalho-menu li{
-        padding: 12px;
+        padding: 1em;
         display: inline-block;
     }
 
