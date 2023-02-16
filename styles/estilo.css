@@ -93,6 +93,26 @@ section span{
     display: block;
 }
 
+.artigos a{
+    display: inline-block;
+    margin-bottom: 3em;
+}
+
+.artigos a{
+    text-decoration: none;
+    background-color: #fce445;
+    color: #242427;
+    padding: 1.2em;
+    border-radius: .2em;
+    font-family: Righteous;
+    transition: all .5s;
+}
+
+.artigos a:hover{
+    background-color:#ffeb6c;
+    transition: all .5s;
+}
+
 #contato h2{
     padding-bottom: 1em;
     border-bottom: 1px solid #242427;
@@ -136,7 +156,7 @@ strong{
 
 .third-section-h2{
     background-color: #242427;
-    color:#eeeeee;
+    color:white;
     padding: 10px;
     border-top-right-radius: 1em;
     margin-bottom: 1em;
@@ -168,6 +188,49 @@ strong{
     border-bottom-left-radius: 1em;
 }
 
+.formulário{
+    padding-top: 13%;
+    background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .9)), url(../images/lendojornal.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: justify;
+}
+
+.formulário p{
+    display: inline-block;
+    background: linear-gradient(rgba(251, 255, 0, 0.7), rgba(255, 255, 6, 0.6));
+}
+
+.formulário input{
+    display: block;
+    width: 100%;
+    height: 4em;
+    border-radius: 5px;
+    margin-bottom: .3em;
+    font-size: 1em;
+    font-family: "Righteous";
+
+}
+
+.formulário input[type="text"]{
+    margin-top: 1em;
+}
+
+.formulário input:placeholder-shown{
+    padding-left: 1em;
+}
+
+.formulário input:not(button):focus-within{
+    padding-left: 1em;
+}
+
+.formulário input[type="button"]:hover{
+    background-color:#d0d0dc;
+}
+
+
 
 
 footer{
@@ -176,9 +239,16 @@ footer{
     color: #f5f5f5;
     font-size: 1.2em;
     text-align: center;
+    border-top: 5px solid white;
+}
+
+footer p{
+    font-family: "Righteous";
+    color:white;
 }
 
 @media screen and (min-width: 47em){
+
     .cabeçalho h1{
         font-size: 1.5em;
         line-height: 1.5em;
@@ -200,7 +270,7 @@ footer{
 
     .main-faixa-empresa{
         clear: both;
-        background: linear-gradient(rgba(0,0,0, .3), rgba(0,0,0, .9)), url(../images/mercedesbackground.jpg);
+        background: linear-gradient(rgba(0,0,0, .9), rgba(0,0,0, .3)), url(../images/mercedesbackground.jpg);
         height: 90vh;
         background-size: cover;
         background-position: center;
@@ -251,6 +321,10 @@ footer{
     .artigos{
         padding-bottom: 0;
     }
+
+    .formulário{
+        padding: 10% 20%;
+    }
         
 }
 
@@ -280,6 +354,10 @@ footer{
 
     .main-faixa-empresa h2{
             width: 28em;
+    }
+
+    .formulário{
+        padding: 7% 30%;
     }
 
 }
