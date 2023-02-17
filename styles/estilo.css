@@ -1,3 +1,5 @@
+/* Formatando a página */
+
 * {
     padding: 0;
     margin: 0;
@@ -23,6 +25,8 @@ p{
 .sobrenosnav{
     text-decoration: underline;
 }
+
+/* Cabeçalho - Parte inicial da página ou menu */
 
 .cabeçalho{
     text-align: center;
@@ -57,6 +61,8 @@ p{
 
 }
 
+/* Main - Topo */
+
 .main-faixa-empresa{
     font-family: "Righteous";
     background-color: #242427;
@@ -73,6 +79,8 @@ p{
     font-size: 2em;
     color: rgb(255, 223, 11);
 }
+
+/* seções da página - onde ficam os article */
 
 section{
     text-align: center;
@@ -154,6 +162,8 @@ strong{
     color:#ffdd00;
 }
 
+/* Section - Carros */
+
 .third-section-h2{
     background-color: #242427;
     color:white;
@@ -165,17 +175,8 @@ strong{
 .third-section div img{
     max-width: 100%;
     transition: all .5s;
-    border-top-right-radius: 1em;
-    border-top-left-radius: 1em;
     background-size: cover;
     background-position: center;
-    height: 77%;
-}
-
-.third-section div img:hover{
-    scale: 1.05;
-    transition: all .5s;
-    
 }
 
 .third-section div p{
@@ -187,6 +188,58 @@ strong{
     border-bottom-right-radius: 1em;
     border-bottom-left-radius: 1em;
 }
+
+/* Efeito thumb nas imagens */
+
+.third-section a{
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.third-section a img{
+    width: 100%;
+    display: block;
+    height: 20em;
+}
+
+.img2{
+    height: 35em;
+}
+
+.third-section a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    transition: all .5s;
+}
+
+.third-section a::after{
+    opacity: 0;
+}
+
+.third-section a:hover:before{
+    background: rgba(0,0,0, .5);
+}
+
+.third-section a:hover:after{
+    content: 'Ver mais';
+    display: block;
+    position: absolute;
+    border: 3px solid white;
+    color: white;
+    top: 50%;
+    left: 50%;
+    padding: 10px 20px;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+/* Formulário de email */
 
 .formulário{
     padding-top: 13%;
@@ -241,6 +294,8 @@ footer p{
     font-family: "Righteous";
     color:whitec;
 }
+
+/* Responsivo da página */
 
 @media screen and (min-width: 47em){
 
@@ -309,8 +364,8 @@ footer p{
         margin: 1%;
     }
 
-    .img4{
-        width: 30em;
+    .third-section a img{
+        height: 20em;
     }
     
     .artigos{
@@ -369,6 +424,10 @@ footer p{
         background-size: cover;
         background-position: center;
         padding: 7% 10% 10% 50%;
+    }
+
+    .third-section a img{
+        height: 12em;
     }
 }
 
